@@ -1,0 +1,43 @@
+/*****-> [INTERLUDE]******/
+/*---Deerful---*/
+/*---from the mini-album Tell Me I Can Fix This On My Own---*/
+
+tempo 96:2
+
+highdrone -> highdrone{}
+lowdrone -> lowdrone{}
+radiodrone -> radiodrone{}
+highdrone >> delay
+highdrone >> reverbL
+lowdrone >> reverbL
+
+
+highdrone -> highdrone{ 2      2}
+lowdrone ->   lowdrone{    2   } 
+radiodrone -> radiodrone{ 1          }<15289>
+
+
+
+perc1 -> rand|   c     d     e     f |(0)^9^
+perc2 -> rand|h     b     h       m      |(0)^9^
+
+perc1 ))
+perc2 ))
+
+
+store interlude
+
+/* SAMPLE DESCRIPTIONS */
+/* MELODIC */
+// highdrone - found synth loop, tuned b
+// lowdrone - highdrone, pitched down two octaves
+// radiodrone - found radio footage
+
+/* DRUMS */
+// perc1 c - paper crumpling
+// perc1 d - paper crumpling
+// perc1 e - paper crumpling
+// perc1 f - paper crumpling
+// perc2 h - wind-up toy sample
+// perc2 b - native ixi sample camina2
+// perc2 m - native ixi sample stretch

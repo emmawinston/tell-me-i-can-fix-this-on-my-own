@@ -1,0 +1,152 @@
+/*****N1C******/
+/*---Deerful---*/
+/*---from the mini-album Tell Me I Can Fix This On My Own---*/
+
+tonic 60
+scale major
+tempo 76:2
+a -> (68)
+b -> (57)
+c -> (46)
+d -> (35)
+e -> (24)
+f -> (13)
+g -> (58)
+
+rain -> rain {2 }
+
+loop1 -> sine[]
+loop2 -> sine[]
+group pianos -> loop1 loop2
+pianos >> reverb
+
+loop1 -> sine[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)^4^
+loop2 -> sine[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12^4^
+
+bass -> fmbass[]
+hats -> ||
+kicks -> ||
+string -> synth[]
+chimes -> klang[]
+string >> reverb
+
+VERSE
+When lightning struck the spire of the station
+We listened, lost in wonder, to the sound
+a storm in from the south
+a crack across the sky 
+that shook us where we waited on the ground
+
+bass -> fmbass[66 666  55 555  44 444  44445555]-12^3^
+
+I laughed that this was what I'd always wanted
+Be washed away without a trace behind 
+it breaks my heart in half
+it breaks my heart in half 
+No one can be this happy all the time 
+
+hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
+kicks ->        |o   x   |^86^
+group drums -> hats kicks
+
+string -> synth[33332222111111113333225511111122](0)+12*2^3^
+
+CHORUS
+everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+string -> synth[](0)+12*2^3^
+chimes -> klang[8 38    727  7 6 6 16 6 616 7 7 ]^3^
+
+VERSE 
+The hours I spent fixating on the weather 
+And silencing the voice inside my heart 
+I could not read the signs 
+I did not know you then 
+And now I don't know where to even start
+
+string -> synth[33332222111111113333225511111122](0)+12*2^3^ 
+
+CHORUS
+everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+string -> synth[ddddeeeeffffffffddddeeggddddddee](0)+12*2^3^
+
+Everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+chimes -> klang[]
+string ((
+string ))
+string -> synth[](0)+12*2^9^
+bass -> fmbass[]
+
+doze drums
+perk drums
+
+VERSE
+If I could climb inside your head and stay there
+If I could be the one who came prepared
+A storm in from the west 
+A crack across my heart
+Perhaps I wouldn't be so fucking scared
+
+loop2 -> sine[]
+loop1 -> sine[]
+
+rain ((
+
+kill
+
+/*---GLOBAL STORAGE---*/
+
+store n1c
+
+/* SAMPLE DESCRIPTIONS */
+/* DRUMS */
+// kicks o - warm lo-fi kick drum
+// kicks x - dry snare
+// hats - dry hi-hat
+
+/* FOLEY */
+// rain - extended thunderstorm sound effects
+
+/* FMBASS SYNTH */
+/*
+SynthDef(\fmbass, { arg out=0, amp=0.1, gate=1, pan=0, freq=200;
+	var sig;
+	var sig1, sig2, sig3, sig4, sig5, sig6, sig7, sig8;
+	var env1, env2, env3, env4, env5, env6, env7, env8;
+	freq = freq / 4;
+	freq = freq * ((0..1)/1 - 0.5 * 0.0007 + 1);
+	env1 = EnvGen.kr(Env([0,1,0.051,0],[0.001,0.01,0.8], [4,-8]), 1);
+	env2 = EnvGen.kr(Env([0,1,0.051,0],[0.005,0.5,1.5], [0,-8], releaseNode:2), 1);
+	env3 = EnvGen.kr(Env([0,1,1,0],[0.01,0.01,0.2], [0,0,-4], releaseNode:2), gate);
+	env4 = EnvGen.kr(Env([0,1,0],[0.002,2.8], [0,-4]), 1);
+	env5 = EnvGen.kr(Env([0,1,1,0],[0.001,0.1,0.8], [4,0,-4], releaseNode:2), gate);
+	env6 = EnvGen.kr(Env([0,1,0],[0.001,3.0], [0,-4]), 1);
+	//freq = freq * EnvGen.kr(Env([1,1.002,0.998,1],[0.1,0.8]), 1);
+	sig1 = SinOsc.ar(freq * 11 + 0) * env1; 
+	sig2 = SinOsc.ar(freq * 6 * ( sig1 * 2.5 + 1 )) * env2;
+	sig3 = SinOsc.ar(freq * 2 * 1 + 0) * env3;
+	sig4 = SinOsc.ar(freq * 1 * ( sig3 * 2.5 + 1 ) + 0) * env4;
+	sig5 = SinOsc.ar(freq * 1 * ( sig2 * 2.5 + 1 ) * (sig4 * 2.5 + 1)) * env5;
+	sig6 = SinOsc.ar(freq * 2) * env6;
+	//sig = sig2 + sig3 + sig4 + sig5 + sig6;
+	sig = [sig1, sig2, sig3, sig4, sig5, sig6] * DC.ar([0.0, 0.0, 0.0,  0.0, 0.5, 0.5]);
+	sig.debug("sig");
+	sig = sig /2;
+	sig = sig.flop.sum;
+	sig = sig * EnvGen.ar(\adsr.kr( Env.adsr(0.001,0,1,0.01, 1,-1) ),gate,doneAction:2);
+	sig = sig * AmpComp.kr(freq);
+	sig.debug("sigx");
+	sig = Pan2.ar(sig, pan + [ 0, 0, 0, 0, 0, 0], amp).sum;
+	Out.ar(out, sig);
+}).add(\3-n1c); */

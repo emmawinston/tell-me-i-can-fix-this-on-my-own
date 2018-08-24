@@ -1,0 +1,118 @@
+/*****LOOP******/
+/*---Deerful---*/
+/*---from the mini-album Tell Me I Can Fix This On My Own---*/
+
+tempo 110:2
+scale major
+
+c -> (135)
+f -> (146)
+g -> (257)
+drone -> strum[]
+drone1 -> cutevoice[]
+sonar -> sonar[]
+tiny -> tinyhigh[]
+harmony ->  notification[]
+twinkle ->  twinkle2[]
+
+one ->      | Y  Y|^8^
+two ->      |x x   x    x|^8^
+three ->    |A   |^8^ 
+four ->     |  c   |^8^
+
+group drums -> one two three four
+perk drums
+doze drums
+
+drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    ]^644^/2(0)-1
+
+lean against my shoulder in the park
+tell me that you'll always be my friend
+hold me in the dusk and after dark
+one day we'll loop around and start again
+
+drone1 -> cutevoice[1                   2 ]^2^(0)-1
+
+Show me all the light that you let in
+Tell me where the cracks are to repair
+Guide me through the places that you've been
+Keep for me the secrets that we share
+
+sonar -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^535^+2(0)
+
+tiny -> tinyhigh[1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 5 7 5 7 5 7 5 7 4 6 4 6 4 6 4 6 4 6 4 6 5 7 5 7 1 3 1 3 1 3 1 3 ]^2^(0)-1
+
+group chorus -> sonar tiny
+
+doze chorus
+perk chorus
+
+Time stands still
+Still the days keep marching on
+Time runs out
+At the ending you'll be gone 
+
+harmony ->  notification[  3     3    3    3     3    3    3     3    3    3     3    3  ]^7^/2(0)+2 
+
+twinkle ->      twinkle2[1                                       ]^4^(0)-1
+
+Break me into pieces in your hands
+Put me back together in your mind
+Whisper things that no one understands
+Swear you'll never let me fall behind
+
+Take my hand between us on the train 
+Teach me all the things you wish you'd known
+Hide with me in cafes from the rain
+Tell me I can fix this on my own 
+
+perk chorus
+
+sonar -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^535^+2(0)
+
+tiny -> tinyhigh[1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 5 7 5 7 5 7 5 7 4 6 4 6 4 6 4 6 4 6 4 6 5 7 5 7 1 3 1 3 1 3 1 3 ]^2^(0)-1
+
+doze chorus
+
+Time stands still
+And the mountain's mine to climb
+Time runs out
+Still there's somehow always time
+
+doze chorus
+
+harmony ->  notification[  3     3    3    3     3    3    3     3    3    3     3    3  ]^7^/2(0)+2 
+
+twinkle ->  twinkle2[1                                       ]^4^(0)-1 
+
+drone1 -> cutevoice[1                   2 ]^2^(0)-1
+
+one ->      | Y  Y|^8^
+two ->      |x x   x    x|^8^
+three ->    |A   |^8^ 
+four ->     |  c   |^8^
+
+drone ->  strum[]^644^/2(0)-1
+doze drone
+
+When the clock that wakes us can be heard
+Fly home to the nest from which you came
+Leave me healing halfway round the world
+Until we loop around and start again
+
+store loop
+
+/* SAMPLE DESCRIPTIONS */
+/* MELODIC */
+// strum - reverbed piano, tuned C
+// cutevoice - pitched vocal sample, tuned C
+// sonar - synth pop, tuned A
+// tinyhigh - electric piano sample, tuned C
+// notification - synth pop, tuned F
+// sparkle - bell ring, tuned E
+
+/* DRUMS */
+// one - native ixi sample snow
+// two - native ixi sample snork
+// three - dry aggressive kick drum
+// four - native ixi sample camina1
