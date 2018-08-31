@@ -9,7 +9,7 @@ You can buy the record in digital format on [Bandcamp](http://deerful.bandcamp.c
 ## About this repository
 Since ixi itself is open source, I've made the code available here to be played with. The files cannot be opened directly in ixi as far as I know, but must be copied and pasted into the coding window. 
 
-In a number of places I have defined snapshots, which are groups of sounds and sequences that can be recalled simultaneously. I can't easily provide these along with the code, so you will need to set them up yourself. Evaluating `snapshot -> one` will store a snapshot with the name 'one' which can be recalled by running `snapshot one` (with no arrow). I usually leave the storage code at the bottom of the file, and the code for recalling at the point in the file where I would actually switch to the snapshot when playing live.
+In a number of places I have defined snapshots, which are groups of sounds and sequences that can be recalled simultaneously. I can't find an easy way to provide these along with the code, so you will need to set them up yourself. Evaluating `snapshot -> one` will store a snapshot with the name 'one' which can be recalled by running `snapshot one` (with no arrow). I usually leave the storage code at the bottom of the file, and the code for recalling at the point in the file where I would actually switch to the snapshot when playing live.
 
 The album uses a number of samples which I cannot freely provide in their original form due to licensing rules, so at the bottom of each file I have listed where these are used with a rough description of the sample, and its original pitch (to ensure everything plays in the correct key).
 
